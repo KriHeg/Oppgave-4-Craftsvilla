@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/script.js"></script>
     <script src="/homeView.js"></script>
+    <script src="/bookinView.js"></script>
      <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   
@@ -12,7 +13,9 @@
     <link rel="stylesheet" href="/style.css">
     <title>Document</title>
 </head>
+
 <body>
+    <button onclick="bookingview()">TRYKK HER TRYKK HER</button>
     <header>
         
     <div class="logo-icon">🎨</div>
@@ -31,13 +34,13 @@
             <option value="Tilbakemelding">Tilbakemelding</option>
         </select>
 </div>
-
-        
     </header>
+    <div id="main">
     <div class="hero">
     
      <h1>Slipp løs kreativiteten din. Koble til. Slapp av.</h1>
         <img id = heroimage src="./images/Relax photo1.png" alt="avslappende bilde">
+         <button onclick="bookingview()">Bestill verkstedet ditt</button>
         <p>Bestill verkstedet ditt</p>
     </div>
 <section id="about">
@@ -48,6 +51,7 @@
         eller kolleger som finner avslapning etter jobb, vi tilbyr gledelige, guidede kunstopplevelser for alle.
     </p>
 </section>
+
 
 
 
@@ -78,7 +82,7 @@
         </div>
     </div>
 
-</div>
+
 
 
 <section id="fordeler">
@@ -92,22 +96,45 @@
 </section>
 
 
+<h2>Kommende workshops</h2>
 <section id="workshops">
-    <h2>Kommende workshops</h2>
-    <div>
-        <div >
+    
+        <div class="workshopcards">
             <h4>Mosaikk kveld</h4>
             <p>25 April</p>
         </div>
-        <div>
+         <div class="workshopcards">
             <h4>Akvarell nybegynner</h4>
             <p>28 April</p>
         </div>
-        <div>
+         <div class="workshopcards">
             <h4>Lerretsmaling</h4>
             <p>2 Mai</p>
         </div>
-    </div>
+    
 </section>
+    <div id="booking">
+           <form id="bookingForm">
+        <h3>Bestillingsskjema</h3>
+            <input type="text" placeholder="Navn">
+            <input type="email" placeholder="E-post" >
+            <input type="tel" placeholder="Telefonnummer" >
+
+            <select id="workshopSelect">
+            <option value="">Velg workshop</option>
+            <option value="Mosaikkkunst">Mosaikkkunst</option>
+            <option value="Akvarellmaling">Akvarellmaling</option>
+            <option value="Lerretsmaling">Lerretsmaling</option>
+
+        <input type="date">
+        <input type="time">
+
+        <input type="number" placeholder="Antall deltakere">
+        <button type="submit">Send inn</button>
+
+        </select>
+
+    </div>
 </body>
+</div>
 </html>

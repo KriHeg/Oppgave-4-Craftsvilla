@@ -1,3 +1,3 @@
-function updateView(){
-    document.getElementById('main').innerHTML = "Halla"
+function updateView() {
+  document.getElementById("main").innerHTML = "Halla";
 }
