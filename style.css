@@ -147,3 +147,45 @@ a {
   flex-direction: column;
   align-items: center;
 }
+
+#gallery {
+
+  padding: 60px  20px;
+  background-color: #f9f9fb;
+  text-align: center;
+}
+
+#gallery h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 30px;
+
+}
+
+#feedback {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+#feedback h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#feedback p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+#workshops
+ {
+  padding: 60px 20px;
+  background: #f3f4f8;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+}
